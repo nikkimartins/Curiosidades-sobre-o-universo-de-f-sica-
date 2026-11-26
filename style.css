@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #090e2c, #172554, #2563eb);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 18px;
+  color: #bfdbfe;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.flashcards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(147, 197, 253, 0.4);
+  border-radius: 20px;
+  padding: 30px;
+  min-height: 200px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card h3 {
+  color: #93c5fd;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #eff6ff;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 30px;
+  color: #bfdbfe;
+}
+
+@media (max-width: 700px) {
+  .flashcards {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+}
